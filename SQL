@@ -1,0 +1,7 @@
+Run Following To execute SP
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetFirstName`(inout email1 varchar(150) )
+BEGIN
+SELECT first_name INTO email1  FROM demo.salesforcecontacts where email=email1;
+END
+
+
